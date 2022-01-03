@@ -5,14 +5,16 @@ export const AddCategory = ({ setCategories }) => {
 
     const [inputValue, setInputValue] = useState('')
 
-    const handleInputChange = (e) => setInputValue(e.target.value);
+    const handleInputChange = (e) => {
+        setInputValue(e.target.value);
+    }
 
     const handleSubmit = (e) => {
         e.preventDefault();
         
         if ( inputValue.trim().length > 2 ) {
-            setCategories( cats => [ ...cats, inputValue ] );
-            setInputValue( "" )
+            setCategories( cats => [ inputValue, ...cats ] );
+            setInputValue( '' )
         }
     }
 
