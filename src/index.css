@@ -8,3 +8,10 @@ html, body {
   font-size: 1.3rem;
   padding: 60px;
 }
+
+input {
+  border-radius: 4px;
+  color: gray;
+  font-size: 1.2rem;
+  width: 100%;
+}
