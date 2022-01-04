@@ -10,13 +10,14 @@ export const GifGrid = ({ category }) => {
         <Fragment>
             <h3>{ category }</h3>
 
-            { loading && 'Loagind ...' }
+            <p className='not-results'>{ loading && 'Loading ...' }</p>
+            <p className='not-results'>{ (!images.length && !loading) && (`Not results for: ${ category }`) }</p>
 
             <div className='card-grid'>
                 {
-                    images.map( (img) => 
-                        <GifGridItem 
-                            key={ img.id }
+                    images.map((img) => 
+                        <GifGridItem
+                            key={ img.id } 
                             { ...img }
                         />
                     )
