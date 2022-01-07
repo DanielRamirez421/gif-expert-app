@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddCategory component file test should show AddCategory component correctly 1`] = `
+<Fragment>
+  <p />
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+  </form>
+</Fragment>
+`;
