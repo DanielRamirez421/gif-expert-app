@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import { useFetchGifs } from '../hooks/useFetchGifs';
 import { GifGridItem } from './GifGridItem';
+import PropTypes from 'prop-types';
 
 export const GifGrid = ({ category }) => {
 
@@ -9,9 +10,9 @@ export const GifGrid = ({ category }) => {
     return (
         <Fragment>
             <h3>{ category }</h3>
-
-            <p className='not-results'>{ loading && 'Loading ...' }</p>
-            <p className='not-results'>{ (!images.length && !loading) && (`Not results for: ${ category }`) }</p>
+            
+            { loading && <p className='not-results'>Loading ...</p> }
+            { (!images.length && !loading) && <p className='not-results'>Not results for: { category }</p> }
 
             <div className='card-grid'>
                 {
@@ -25,4 +26,8 @@ export const GifGrid = ({ category }) => {
             </div>
         </Fragment>
     )
+}
+
+GifGrid.propTypes = {
+    category: PropTypes.string.isRequired
 }
