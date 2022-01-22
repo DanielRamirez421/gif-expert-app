@@ -1,17 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`GifExpertApp tests should create GifExpertApp component 1`] = `
+exports[`GifExpertApp component tests should create GifExpertApp component 1`] = `
 <div>
   <h2>
-    --GifExpertApp--
+    GifExpertApp
+  </h2>
+  <AddCategory
+    setCategories={[Function]}
+  />
+  <hr />
+</div>
+`;
+
+exports[`GifExpertApp component tests should first 1`] = `
+<div>
+  <h2>
+    GifExpertApp
   </h2>
   <AddCategory
     setCategories={[Function]}
   />
   <hr />
   <GifGrid
-    category="Rick and morty"
-    key="Rick and morty"
+    category="Rick and Morty"
+    key="Rick and Morty"
+  />
+  <GifGrid
+    category="One Punch"
+    key="One Punch"
   />
 </div>
 `;
