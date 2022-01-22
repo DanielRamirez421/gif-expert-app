@@ -12,7 +12,7 @@ exports[`GifExpertApp component tests should create GifExpertApp component 1`] =
 </div>
 `;
 
-exports[`GifExpertApp component tests should first 1`] = `
+exports[`GifExpertApp component tests should render GifGrid based on categories 1`] = `
 <div>
   <h2>
     GifExpertApp
@@ -22,8 +22,8 @@ exports[`GifExpertApp component tests should first 1`] = `
   />
   <hr />
   <GifGrid
-    category="Rick and Morty"
-    key="Rick and Morty"
+    category="Dragon Ball"
+    key="Dragon Ball"
   />
   <GifGrid
     category="One Punch"

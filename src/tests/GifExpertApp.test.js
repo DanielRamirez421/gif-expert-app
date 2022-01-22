@@ -8,7 +8,7 @@ describe('GifExpertApp component tests', () => {
         expect(wrapper).toMatchSnapshot();
     });
 
-    test('should first', () => {
+    test('should render GifGrid based on categories', () => {
         const categories = ['Dragon Ball', 'One Punch'];
         const wrapper = shallow( <GifExpertApp defaultCategories={ categories }/> );
         expect(wrapper).toMatchSnapshot();
