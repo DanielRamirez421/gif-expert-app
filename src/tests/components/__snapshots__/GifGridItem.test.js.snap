@@ -1,25 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing component GridItem should show GifFridItem component correctly 1`] = `
-<div
-  className="card animate__animated animate__fadeInUp"
->
-  <div
-    className="card--image"
-  >
-    <img
-      alt="a title"
-      src="http://localhost/algo.jpg"
-    />
-  </div>
-  <p>
-    <i>
-      a title
-    </i>
-  </p>
-</div>
-`;
-
 exports[`Testing component GridItem should show GifGridItem component correctly 1`] = `
 <div
   className="card animate__animated animate__fadeInUp"

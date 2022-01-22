@@ -9,6 +9,10 @@ exports[`GifExpertApp component tests should create GifExpertApp component 1`] =
     setCategories={[Function]}
   />
   <hr />
+  <GifGrid
+    category="Homer"
+    key="Homer"
+  />
 </div>
 `;
 

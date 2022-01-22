@@ -20,7 +20,6 @@ export const AddCategory = ({ setCategories }) => {
 
     return (
         <Fragment>
-            <p>{ inputState }</p>
             <form onSubmit={ handleSubmit }>
                 <input 
                     type="text"

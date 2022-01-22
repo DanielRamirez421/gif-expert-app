@@ -2,7 +2,6 @@
 
 exports[`AddCategory component file test should show AddCategory component correctly 1`] = `
 <Fragment>
-  <p />
   <form
     onSubmit={[Function]}
   >

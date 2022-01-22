@@ -19,7 +19,7 @@ describe('AddCategory component file test', () => {
         const input = wrapper.find('input');
         const value = 'Hola Mundo!';
         input.simulate('change', { target: { value } });
-        expect( wrapper.find('p').text().trim() ).toBe( value );
+        expect( wrapper.find('input').prop('value') ).toBe( value );
     });
 
     test('Should not call onSubmit method', () => {
